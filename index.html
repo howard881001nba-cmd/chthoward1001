@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseCoach AI | Conversational Fitness & Nutrition Onboarding</title>
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --accent: #f59e0b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: var(--card); padding: 1.2rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+    .logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); letter-spacing: -0.5px; }
+    .nav-btn { background: var(--primary); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.2s; }
+    .nav-btn:hover { background: var(--primary-dark); }
+
+    .hero { max-width: 1100px; margin: 3rem auto; padding: 0 5%; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+    .hero-text h1 { font-size: 2.6rem; line-height: 1.2; margin-bottom: 1rem; color: var(--text); }
+    .hero-text span { color: var(--primary); }
+    .hero-text p { font-size: 1.1rem; color: var(--muted); margin-bottom: 1.8rem; }
+    .cta-group { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary { background: var(--primary); color: white; padding: 0.9rem 1.6rem; border-radius: 10px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.2s; }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); }
+
+    .video-box { background: #0f172a; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.15); aspect-ratio: 16/9; position: relative; }
+    video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .features { max-width: 1100px; margin: 4rem auto; padding: 0 5%; }
+    .section-title { text-align: center; font-size: 2rem; margin-bottom: 2.5rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: var(--card); padding: 2rem; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); }
+    .card h3 { color: var(--primary); margin-bottom: 0.6rem; font-size: 1.25rem; }
+    .card p { color: var(--muted); font-size: 0.98rem; }
+
+    /* Creative X-Factor Section */
+    .xfactor { max-width: 900px; margin: 4rem auto; padding: 2.5rem; background: var(--card); border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); border: 2px solid #ccfbf1; }
+    .toggle-bar { display: flex; justify-content: center; gap: 1rem; margin: 1.5rem 0; }
+    .toggle-btn { padding: 0.7rem 1.4rem; border: 2px solid var(--primary); border-radius: 8px; background: white; color: var(--primary); font-weight: 700; cursor: pointer; transition: 0.2s; }
+    .toggle-btn.active { background: var(--primary); color: white; }
+    .demo-panel { background: #f1f5f9; padding: 1.5rem; border-radius: 12px; min-height: 160px; }
+    .chat-bubble { background: white; padding: 0.9rem 1.2rem; border-radius: 12px; margin-bottom: 0.8rem; box-shadow: 0 2px 5px rgba(0,0,0,0.04); }
+    .chat-ai { border-left: 4px solid var(--primary); }
+    .chat-user { border-right: 4px solid var(--accent); text-align: right; background: #fffbeb; }
+
+    footer { background: #0f172a; color: #cbd5e1; padding: 2.5rem 5%; margin-top: 4rem; text-align: center; }
+    .xfactor-note { max-width: 700px; margin: 0 auto 1rem auto; padding: 1rem; background: rgba(255,255,255,0.08); border-radius: 8px; font-size: 0.95rem; color: #f8fafc; }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-text h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">PulseCoach AI</div>
+    <!-- Multi-Page Navigation Button -->
+    <a href="program.html" class="nav-btn">How It Works &amp; Plans &rarr;</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Skip the 30-Question Form. <span>Just Chat</span> with Your AI Coach.</h1>
+      <p>Traditional gym intake forms are full of confusing jargon. Tell PulseCoach AI your daily routine and goals in plain English—get a tailored fitness and nutrition blueprint in 2 minutes.</p>
+      <div class="cta-group">
+        <!-- Second Page Link -->
+        <a href="program.html" class="btn-primary">Explore Assessment Pillars</a>
+      </div>
+    </div>
+
+    <!-- Requirement 1 & 2: AI-generated video auto-playing on a loop -->
+    <div class="video-box">
+      <video autoplay loop muted playsinline>
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2 class="section-title">Why Conversational Onboarding Works Better</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Zero Fitness Jargon</h3>
+        <p>Don't know your BMR or macro split? No problem. Simply describe how you eat and move, and our AI translates it into actionable metrics.</p>
+      </div>
+      <div class="card">
+        <h3>Adaptive Follow-Up</h3>
+        <p>Unlike rigid forms, our AI asks smart follow-up questions based on your schedule, past injuries, and favorite foods.</p>
+      </div>
+      <div class="card">
+        <h3>Instant Personalization</h3>
+        <p>Receive a realistic workout frequency and calorie target immediately—plus seamless handoff to a certified human coach.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requirement 5: Creative "X-Factor" Interactive Feature -->
+  <section class="xfactor">
+    <h2 style="text-align:center;">Experience the Difference: Form vs. AI Chat</h2>
+    <p style="text-align:center; color: var(--muted); margin-top:0.4rem;">Click below to compare a traditional intake form with our conversational AI.</p>
+    
+    <div class="toggle-bar">
+      <button id="btn-chat" class="toggle-btn active" onclick="showMode('chat')">PulseCoach AI Chat (2 Mins)</button>
+      <button id="btn-form" class="toggle-btn" onclick="showMode('form')">Traditional Intake Form (15+ Mins)</button>
+    </div>
+
+    <div id="demo-content" class="demo-panel">
+      <div class="chat-bubble chat-ai"><strong>PulseCoach AI:</strong> Hey! Forget the numbers for a second—what does a typical workday look like for you, and what’s one goal you’d love to hit in the next 3 months?</div>
+      <div class="chat-bubble chat-user"><strong>You:</strong> I sit at a desk 9 hours a day and feel exhausted after work. I just want to lose 10 lbs without giving up iced lattes!</div>
+      <div class="chat-bubble chat-ai"><strong>PulseCoach AI:</strong> Totally doable! Keeping your iced latte is easy if we adjust lunch protein. Do you prefer 25-minute home workouts or hitting a gym 3 days a week?</div>
+    </div>
+  </section>
+
+  <footer>
+    <!-- Requirement 5 Explanation (Under 50 words at bottom of landing page) -->
+    <div class="xfactor-note">
+      <strong>Creative X-Factor Feature:</strong> An interactive "Form vs. AI Chat" simulator allowing visitors to toggle between a tedious traditional gym questionnaire and our adaptive AI conversation, visually demonstrating how natural dialogue eliminates onboarding friction.
+    </div>
+    <p style="font-size: 0.85rem; color: #94a3b8;">&copy; 2026 PulseCoach AI. Built for ITOM 6216.</p>
+  </footer>
+
+  <script>
+    function showMode(mode) {
+      const panel = document.getElementById('demo-content');
+      const btnChat = document.getElementById('btn-chat');
+      const btnForm = document.getElementById('btn-form');
+
+      if (mode === 'chat') {
+        btnChat.classList.add('active');
+        btnForm.classList.remove('active');
+        panel.innerHTML = `
+          <div class="chat-bubble chat-ai"><strong>PulseCoach AI:</strong> Hey! Forget the numbers for a second—what does a typical workday look like for you, and what’s one goal you’d love to hit in the next 3 months?</div>
+          <div class="chat-bubble chat-user"><strong>You:</strong> I sit at a desk 9 hours a day and feel exhausted after work. I just want to lose 10 lbs without giving up iced lattes!</div>
+          <div class="chat-bubble chat-ai"><strong>PulseCoach AI:</strong> Totally doable! Keeping your iced latte is easy if we adjust lunch protein. Do you prefer 25-minute home workouts or hitting a gym 3 days a week?</div>
+        `;
+      } else {
+        btnForm.classList.add('active');
+        btnChat.classList.remove('active');
+        panel.innerHTML = `
+          <p style="color:#b91c1c; font-weight:700; margin-bottom:0.6rem;">⚠️ Traditional Intake Form (Page 1 of 4)</p>
+          <p style="font-size:0.9rem; color:#475569; margin-bottom:0.4rem;">1. Enter your estimated Basal Metabolic Rate (BMR): [ ________ kcal ]</p>
+          <p style="font-size:0.9rem; color:#475569; margin-bottom:0.4rem;">2. Select primary training modality: ( ) Hypertrophy ( ) Metabolic Conditioning ( ) Periodized Strength</p>
+          <p style="font-size:0.9rem; color:#475569;">3. Specify daily macronutrient ratio (Protein % / Carb % / Fat %): [ __ / __ / __ ] <em>(72% of users abandon here)</em></p>
+        `;
+      }
+    }
+  </script>
+
+  <!-- ===================================================================== -->
+  <!-- REQUIREMENT 4: PASTE YOUR LAB 3 CHATBOT EMBED CODE RIGHT BELOW THIS   -->
+  <!-- ===================================================================== -->
+
+</body>
+</html>
