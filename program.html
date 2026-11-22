@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works | PulseCoach AI</title>
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: var(--card); padding: 1.2rem 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    .logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+    .nav-btn { background: #e2e8f0; color: var(--text); padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: 0.2s; }
+    .nav-btn:hover { background: #cbd5e1; }
+
+    .container { max-width: 1000px; margin: 3.5rem auto; padding: 0 5%; }
+    .page-header { text-align: center; margin-bottom: 3rem; }
+    .page-header h1 { font-size: 2.3rem; margin-bottom: 0.8rem; }
+    .page-header p { color: var(--muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+
+    .pillar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
+    .pillar-card { background: var(--card); padding: 2rem; border-radius: 14px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); border-top: 4px solid var(--primary); }
+    .pillar-card h3 { font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--primary); }
+    .pillar-card p { color: var(--muted); }
+
+    .prompt-banner { background: #0f172a; color: white; padding: 2.5rem; border-radius: 16px; text-align: center; }
+    .prompt-banner h2 { margin-bottom: 0.8rem; }
+    .prompt-banner p { color: #cbd5e1; max-width: 650px; margin: 0 auto; }
+
+    @media (max-width: 600px) {
+      .pillar-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">PulseCoach AI</a>
+    <a href="index.html" class="nav-btn">&larr; Back to Home</a>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>4 Pillars We Assess Through Natural Chat</h1>
+      <p>Behind the scenes, PulseCoach AI translates your casual conversation into structured fitness and nutrition parameters—no spreadsheets or calorie math required.</p>
+    </div>
+
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <h3>1. Lifestyle &amp; Recovery Rhythm</h3>
+        <p>We ask about your work hours, sleep quality, and daily stress levels so we never prescribe an unrealistic 6-day workout split to a busy professional.</p>
+      </div>
+      <div class="pillar-card">
+        <h3>2. Flexible Nutrition Preferences</h3>
+        <p>Instead of rigid meal plans, our AI identifies your eating habits, cultural food preferences, and non-negotiable treats to build a sustainable calorie deficit.</p>
+      </div>
+      <div class="pillar-card">
+        <h3>3. Movement History &amp; Injury Guardrails</h3>
+        <p>By chatting about past sports or joint discomfort (like lower back or knee sensitivity), the AI filters out high-risk exercises before your first session.</p>
+      </div>
+      <div class="pillar-card">
+        <h3>4. Realistic Time &amp; Equipment Budget</h3>
+        <p>Whether you have 20 minutes with dumbbells at home or 60 minutes at a full commercial gym, we tailor volume and intensity to fit your actual life.</p>
+      </div>
+    </div>
+
+    <div class="prompt-banner">
+      <h2>Ready to Try Your 2-Minute Assessment?</h2>
+      <p>Click the chat widget in the bottom-right corner right now and tell PulseCoach AI your fitness goal to experience conversational onboarding live.</p>
+    </div>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- REQUIREMENT 4: PASTE YOUR LAB 3 CHATBOT EMBED CODE RIGHT BELOW THIS   -->
+  <!-- ===================================================================== -->
+
+</body>
+</html>
